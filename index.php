@@ -15,7 +15,7 @@ foreach($unsorted as $key => $unsortedItem) {
         if (!$left) {
             $left = $key;
         } else {
-            if (isset($unsorted[$key + 1]) || $unsorted[$key + 1] !== $items[$key +1]) {
+            if (!isset($unsorted[$key + 1]) || $unsorted[$key + 1] === $items[$key +1]) {
                 $right = $key;
             }
         }
