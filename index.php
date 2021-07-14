@@ -1,3 +1,5 @@
+<?php
+
 function findUnsortedSubarray(array $items): array {
 
 $unsorted = $items;
